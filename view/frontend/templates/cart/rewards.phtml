@@ -1,0 +1,4 @@
+<?php
+    $blockTemplateFile = $block->getTemplateFile('Amasty_Rewards::cart/rewards.phtml');
+?>
+<?= str_replace('<script', '<script data-breeze', $block->fetchView($blockTemplateFile)) ?>

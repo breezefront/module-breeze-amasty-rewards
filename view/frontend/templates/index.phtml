@@ -1,0 +1,14 @@
+<?php
+    $blockTemplateFile = $block->getTemplateFile('Amasty_Rewards::index.phtml');
+?>
+<?= str_replace(
+    [
+        '<script',
+        'customerData.initStorage();'
+    ],
+    [
+        '<script data-breeze',
+        ''
+    ],
+    $block->fetchView($blockTemplateFile)
+) ?>

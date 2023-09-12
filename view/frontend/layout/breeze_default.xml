@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="breeze.js">
+            <arguments>
+                <argument name="bundles" xsi:type="array">
+                    <item name="product" xsi:type="array">
+                        <item name="items" xsi:type="array">
+                            <item name="Amasty_Rewards/js/model/catalog/highlight-product" xsi:type="string">
+                                Swissup_BreezeAmastyRewards/js/model/catalog/highlight-product
+                            </item>
+                        </item>
+                    </item>
+                    <item name="checkout" xsi:type="array">
+                        <item name="items" xsi:type="array">
+                            <item name="Amasty_Rewards/js/model/totals/highlight" xsi:type="string">
+                                Swissup_BreezeAmastyRewards/js/model/totals/highlight
+                            </item>
+                            <item name="Amasty_Rewards/js/amreward-points" xsi:type="string">
+                                Amasty_Rewards/js/amreward-points
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>
